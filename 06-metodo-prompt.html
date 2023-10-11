@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método Prompt</title>
+    <script>
+        let nome;
+        nome = prompt("Por favor, insira seu nome:"); // abrindo uma caixa flutuante que carrega antes do conteudo principal, e permite que o usuario digite algo
+    </script>
+</head>
+<body>
+    <h1>Minha página</h1>
+    
+    <script>
+        //document.write("<h3>" + nome + ", seja bem vindo! <h3>");
+        //document.write('<h3>' + 'Gabriel Erick' + ", seja bem vindo! </h3>") //concatenando textos, somando textos, que ficarao como se tivessem sido escritos juntos
+        document.write(`<h3>${nome}, seja bem-vindo!</h3>`); //metodo de interpolação de string, que evita a necessidade de concatenar os textos, onde ${nome} esta dizendo para incorporar o conteudo da variavel "nome" dentro do meu texto
+        </script> 
+</body>
+</html>
