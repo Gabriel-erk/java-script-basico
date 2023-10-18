@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Matematicos</title>
+</head>
+
+<body>
+    <h1> Calculadora Simples</h1>
+    <script>
+        //solicita o primeiro operando
+        let operando1;
+        //solicita o segundo operando
+        let operando2;
+        let resultado;
+        let resultado2;
+        let resultado3;
+        let resultado4;
+
+        operando1 = prompt("digite o primeiro numero:");
+        operando2 = prompt("digite o segundo numero:");
+
+        // Converter as strings em números
+        operando1 = parseFloat(operando1);
+        operando2 = parseFloat(operando2);
+
+        document.write(`Adição: ${operando1} + ${operando2} = ${operando1 + operando2} <br>`);
+
+        document.write(`Subtração: ${operando1} - ${operando2} = ${operando1 - operando2} <br>`);
+
+        document.write(`Multiplicação: ${operando1} * ${operando2} = ${operando1 * operando2} <br>`);
+
+        document.write(`Divisão: ${operando1} / ${operando2} = ${operando1 / operando2} <br>`);
+
+        document.write(`Resto da Divisão: ${operando1} % ${operando2} = ${operando1 % operando2} <br>`); //é utilizado o % para calcular o resto da divisão
+
+        document.write(`Exponenciação: ${operando1} ** ${operando2} = ${operando1 ** operando2} `); 
+    </script>
+</body>
+
+</html>
