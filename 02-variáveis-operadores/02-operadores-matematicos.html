@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -15,10 +15,6 @@
         let operando1;
         //solicita o segundo operando
         let operando2;
-        let resultado;
-        let resultado2;
-        let resultado3;
-        let resultado4;
 
         operando1 = prompt("digite o primeiro numero:");
         operando2 = prompt("digite o segundo numero:");
@@ -37,7 +33,11 @@
 
         document.write(`Resto da Divisão: ${operando1} % ${operando2} = ${operando1 % operando2} <br>`); //é utilizado o % para calcular o resto da divisão
 
-        document.write(`Exponenciação: ${operando1} ** ${operando2} = ${operando1 ** operando2} `); 
+        document.write(`Exponenciação: ${operando1} ** ${operando2} = ${operando1 ** operando2} <br>`); 
+
+        document.write(`Unário de Incremento: ${operando1} apos incrementar = ${++operando1}<br>`); 
+
+        document.write(`Unário de Decremento: ${operando1} apos decrementar = ${--operando1}`); 
     </script>
 </body>
 

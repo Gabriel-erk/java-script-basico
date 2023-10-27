@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontrar Valores</title>
+</head>
+<body>
+    <script>
+        let n = [0, 0, 0]; // Inicialize o array com valores padrão (array = vetor)
+        let maior, menor, medio;
+
+        function carregar() {
+            for (let i = 0; i < 3; i++) {
+                n[i] = parseInt(prompt("Digite um valor: "));
+            }
+        }
+
+        function compararValores() {
+            maior = 0;
+            menor = 0;
+            medio = 0;
+
+            for (let i = 1; i < 3; i++) {
+                if (n[i] > n[maior]) {
+                    maior = i;
+                }
+                if (n[i] < n[menor]) {
+                    menor = i;
+                }
+            }
+
+            for (let i = 0; i < 3; i++) {
+                if (i !== maior && i !== menor) {
+                    medio = i;
+                }
+            }
+        }
+
+        function imprimir() {
+            alert(`${n[menor]} ${n[medio]} ${n[maior]}`);
+        }
+
+        carregar();
+        compararValores();
+        imprimir();
+    </script>
+</body>
+</html>

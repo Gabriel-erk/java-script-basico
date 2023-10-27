@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+
+<body>
+    <h1>Manipulação de Array</h1>
+    <script>
+        // Declarção de uma array
+        let frutas;
+
+        // inicialização
+        frutas = ["maça", "banana", "laranja"];
+
+        // declaração e inicialização
+        let notas = [8, 7, 9, 10];
+
+        // document.write("Elemento da array: ");
+        // document.write(frutas);
+        // document.write("<br");
+
+        //Retornar um elemento do array nomeArray[índice]
+        let segundoElemento = frutas[1];
+        document.write(`Segundo elemento: ${segundoElemento} <br>`);
+
+        //Alterar um valor de array: nomeArray[indice] = novoValor
+        frutas[1] = "goiaba";
+
+        document.write(`Segundo elemento da array após a alteração: ${frutas[1]} <br>`);
+
+        //retrona a quantidade de elementos de uma array nomeArray.lenght
+        document.write(`A array frutas possui ${frutas.lenght} elementos<br>`);
+
+        //Adiciona um elemento no final da array nomeArray.push("novoValor")
+        frutas.push("uva", "manga"); //este é um jeito a mais de fazer, adicionando 2 elementos na array
+        document.write(`Elemento da array: ${frutas} <br>`);
+
+        //remover o ultimo elemtno da array nomeArray.pop()
+        let frutaRemovida = frutas.pop();
+        document.write(`A ${frutaRemovida} foi excluida da array frutas <br>`);
+        document.write(`Elemento da array: ${frutas} <br>`);
+
+        // Inserir "manga" após "goiaba" na array frutas
+        frutas.splice(2, 0, "manga");
+        document.write(`Elemento da array apos adição: ${frutas}<br>`);
+
+        //remover um elemento de uma posição específica nomeArray.splice(X,X)
+        frutas.splice(3,1);
+        document.write(`Elemento da array: ${frutas}`);
+
+
+    </script>
+</body>
+
+</html>

@@ -4,39 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculadora</title>
-    <script>
-        let numero1; // Variável JavaScript dentro da tag <script>
-        let numero2;
-        let resultado;
-        let escolha;
-        function soma() {
-            resultado = numero1 + numero2;
-        }
-
-        function subtracao(){
-            resultado = numero1 - numero2;
-        }
-
-        function mult(){
-            resultado = numero1 * numero2;
-        }
-
-        function divisao() {
-            resultado = numero1 / numero2;
-        }
-    </script>
+    <title>Calculadora</title>
 </head>
 <body>
     <script>
-        escolha = parseFloat(prompt("Digite um número:"));
-        
-        while(escolha!=0){
-            
-        }
-        soma();
+        let op;
+        let v1, v2;
 
-        document.write(`o resultado da soma de ${numero1} e ${numero2} é igual a: ${resultado}`);
+        function menu() {
+            op = prompt("\nMENU\n1 - SOMA\n2 - SUBTRAÇÃO\n3 - MULTIPLICAÇÃO\n4 - DIVISÃO \n5 - RESTO DA DIVISÃO \n6 - EXPONENCIAÇÃO \n0 - SAIR\nOP:");
+        }
+
+        function soma() {
+            v1 = parseInt(prompt("Digite um valor:"));
+            v2 = parseInt(prompt("Digite outro valor:"));
+            let v3 = v1 + v2;
+            alert("O resultado da soma é: " + v3); 
+            // alert é usado para exibir o resultado
+        }
+
+        function sub() {
+            v1 = parseInt(prompt("Digite um valor:"));
+            v2 = parseInt(prompt("Digite outro valor:"));
+            let v3 = v1 - v2;
+            alert("O resultado da subtração é: " + v3);
+        }
+
+        function mt() {
+            v1 = parseInt(prompt("Digite um valor:"));
+            v2 = parseInt(prompt("Digite outro valor:"));
+            let v3 = v1 * v2;
+            alert("O resultado da multiplicação é: " + v3);
+        }
+
+        function divisao() {
+            v1 = parseInt(prompt("Digite um valor:"));
+            v2 = parseInt(prompt("Digite outro valor:"));
+            let v3 = v1 / v2;
+            alert("O resultado da divisão é: " + v3);
+        }
+
+        function restoDiv() {
+            v1 = parseInt(prompt("Digite um valor:"));
+            v2 = parseInt(prompt("Digite outro valor:"));
+            let v3 = v1 % v2;
+            alert("O resto da divisão é: " + v3);
+        }
+
+        function exponenciacao() {
+            v1 = parseInt(prompt("Digite um valor:"));
+            v2 = parseInt(prompt("Digite outro valor:"));
+            let v3 = v1 ** v2;
+            alert("O resultado da exponenciação é: " + v3);
+        }
+
+        op = 99;
+        while (op !== "0") {
+            menu();
+            if (op === "1") {
+                soma();
+            }
+            if (op =="2") {
+                sub();
+            }
+            if (op == "3") {
+                mt();
+            }
+            if(op == "4"){
+                divisao();
+            }
+            if(op == "5"){
+                restoDiv();
+            }
+            if(op == "6"){
+                exponenciacao();
+            }
+        }
     </script>
 </body>
 </html>
