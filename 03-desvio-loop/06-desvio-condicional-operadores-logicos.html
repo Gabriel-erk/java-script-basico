@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Erick</title>
+</head>
+
+<body>
+    <script>
+        let aprovado = prompt("True para sim ou False para nao").toLocaleLowerCase();
+        // deixando como valor de comparação true ou false (boleano)
+        aprovado = aprovado == "true"
+        let frequencia = parseInt(prompt("Qual sua frequencia"));
+
+            if (aprovado == true && frequencia >= 75) {
+                document.write("Aprovado por nota e frequencia");
+            }
+
+            else if (!aprovado && frequencia < 75) {
+                 document.write("Reprovado por falta");
+            }
+
+            // outra maneira de fazer, sem varios if/else
+            // else if(!aprovado || frequencia < 75){
+                // document.write("Reprovado por nota ou frequencia")
+            // }
+             
+        
+    </script>
+</body>
+
+</html>
