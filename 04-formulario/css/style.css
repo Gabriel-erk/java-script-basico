@@ -1,0 +1,25 @@
+body{
+    /* caso a primeira fonte (arial) nao funcione, use a segunda (helvetica) ou a terceira */
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#cpfInput{
+    padding: 5px;
+    font-size: 16px;
+}
+
+#validarButton{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+#validarButton:hover{
+    /* definindo fundo azul para quando passar o mouse em cima */
+    background-color: #0056b3;
+}
